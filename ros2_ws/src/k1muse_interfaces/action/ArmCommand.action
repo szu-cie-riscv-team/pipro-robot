@@ -1,0 +1,38 @@
+# Goal
+uint8 HOME=1
+uint8 MOVE_POSE=3
+uint8 GRIPPER=4
+uint8 GRIP=7
+uint8 TOP_PICK_HOLD=11
+uint8 TOP_PICK_PLACE_LEFT=12
+uint8 TOP_PICK_PLACE_RIGHT=13
+uint8 PLACE_LEFT=14
+uint8 PLACE_RIGHT=15
+uint8 command
+# MOVE_POSE XYZ: TCP target in arm_base (m), +X forward/+Y left/+Z up.
+float32 x
+float32 y
+float32 z
+float32 roll
+float32 pitch
+float32 target_rad
+# Combo commands: current measured lift travel; not a lift movement request.
+# PLACE_LEFT/RIGHT use only this height (no XYZ payload).
+float32 expected_lift_z_m
+---
+# Result
+uint8 result
+uint8 reason
+uint8 fault_source
+uint8 diag_code
+bool demo_valid
+uint8 holding
+uint8 demo_step
+---
+# Feedback
+k1muse_interfaces/ArmStatus status
+bool demo_valid
+uint8 holding
+uint8 demo_step
+uint8 demo_step_count
+float32 demo_progress

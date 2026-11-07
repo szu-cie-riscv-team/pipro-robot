@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>k1muse_manager</name>
+  <version>0.0.0</version>
+  <description>Unified navigation, pharmacy fetch orchestration and callable front/top grasp plans.</description>
+  <maintainer email="user@todo.todo">user</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>ament_index_cpp</depend>
+
+  <depend>rclcpp</depend>
+  <depend>rcl_interfaces</depend>
+  <depend>rclcpp_action</depend>
+  <depend>action_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>vision_msgs</depend>
+  <depend>nav2_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>yaml-cpp</depend>
+  <depend>nlohmann-json-dev</depend>
+  <depend>libcurl4-openssl-dev</depend>
+  <depend>k1muse_interfaces</depend>
+  <depend>k1muse_voice</depend>
+  <depend>k1muse_perception</depend>
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>unique_identifier_msgs</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

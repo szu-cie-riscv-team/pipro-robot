@@ -1,0 +1,14 @@
+# Empty binds the current map.
+string map_id
+# Empty scans the whole warehouse; otherwise all locations of this canonical drug.
+string drug_name
+---
+string message
+string summary_json
+---
+string stage
+string shelf_id
+int32 layer
+string direction
+uint8 attempt
+int32 provisional_count

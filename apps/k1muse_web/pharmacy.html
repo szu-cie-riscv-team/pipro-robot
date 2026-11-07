@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7f5">
+  <title>药房操作台 · K1Muse</title>
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <header class="top"><div class="wrap top-inner">
+    <div class="brand"><span class="mark" aria-hidden="true">✚</span><span>K1Muse <small>药房机器人</small></span></div>
+    <div class="toolbar"><a href="./">开发控制台 ↗</a><button id="connect">连接机器人</button></div>
+  </div></header>
+  <main class="wrap">
+    <div class="intro"><div><div class="eyebrow">PHARMACY OPERATIONS</div><h1>药房操作台</h1><p>查看药品库存与所在货架，向机器人发起取药任务。</p></div>
+    <div class="badge" id="device" role="status">未连接</div></div>
+    <div class="panels">
+      <section class="card inventory">
+        <div class="card-head"><div><span class="step">01</span><h2>药品库存</h2></div><button id="refresh">刷新</button></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索药品或货架" aria-label="搜索药品或货架"></label>
+        <div id="items" class="items"></div>
+        <div class="inventory-foot"><button id="survey">开始整仓盘点</button><small id="inventory-note"></small></div>
+      </section>
+      <section class="card model">
+        <div class="card-head"><div><span class="step">02</span><h2>货架视图</h2></div><div class="toolbar"><button id="angle">立体</button><button id="top">俯视</button></div></div>
+        <div id="scene" class="scene"></div>
+        <div class="model-foot"><span id="location">请选择一个货架层</span><small>拖动旋转 · 滚轮缩放</small></div>
+      </section>
+      <section class="card order">
+        <div class="card-head"><div><span class="step">03</span><h2>取药操作</h2></div></div>
+        <div class="selected"><small>已选药品</small><strong id="drug">请选择药品</strong><span id="selection-detail"></span></div>
+        <div class="quantity"><label for="quantity">取药数量</label><div><button id="minus" aria-label="减少数量">−</button><output id="quantity">1</output><button id="plus" aria-label="增加数量">＋</button></div></div>
+        <button id="fetch" class="primary">开始取药</button>
+        <p id="hint" class="hint"></p>
+      </section>
+    </div>
+    <section class="card task"><div><div class="eyebrow">TASK STATUS</div><h2>当前任务</h2><p id="progress" role="status">暂无任务</p></div><div class="toolbar"><button id="query" hidden>查询原任务</button><button id="cancel" class="danger" hidden>取消任务</button></div></section>
+    <p id="notice" role="status"></p>
+  </main>
+  <script type="module" src="/src/pharmacy.ts"></script>
+</body>
+</html>

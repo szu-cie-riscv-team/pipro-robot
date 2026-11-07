@@ -1,0 +1,24 @@
+{
+  "name": "k1muse-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "test": "tsx --test src/core.test.ts src/warehouse_model.test.ts src/warehouse_edit.test.ts src/visibility.test.ts src/repair.test.ts src/warehouse_inventory.test.ts"
+  },
+  "dependencies": {
+    "@foxglove/rosmsg": "5.0.5",
+    "@foxglove/rosmsg2-serialization": "3.0.2",
+    "@foxglove/ws-protocol": "0.8.0",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3",
+    "@types/three": "0.186.0",
+    "tsx": "4.19.4",
+    "typescript": "5.8.3",
+    "vite": "6.3.5"
+  }
+}

@@ -1,0 +1,11 @@
+string boot_id
+string mode
+bool ready
+bool initial_pose_available
+bool navigation_ready
+bool teleop_enabled
+string map_id
+string client_id
+string navigation_state
+string operation_id
+string operation_result

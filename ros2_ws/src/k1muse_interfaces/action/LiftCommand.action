@@ -1,0 +1,13 @@
+# Goal
+uint8 HOME=1
+uint8 MOVE_Z=2
+uint8 command
+float32 target_z_m
+---
+# Result
+uint8 result
+uint8 reject_reason
+uint8 fault_reason
+---
+# Feedback
+k1muse_interfaces/LiftStatus status

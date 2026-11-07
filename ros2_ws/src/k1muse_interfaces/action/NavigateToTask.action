@@ -1,0 +1,12 @@
+# Named target binds to the prepared map when map_id is empty.
+string task_name
+string map_id
+# Pose target requires an explicit map_id and an empty task_name.
+bool use_pose
+geometry_msgs/PoseStamped target_pose
+---
+# Result
+string message
+---
+# Feedback
+float32 distance_remaining

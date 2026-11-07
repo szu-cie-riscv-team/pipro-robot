@@ -1,0 +1,13 @@
+# One medicine, one shelf layer, up to three items and return.
+string drug_name
+uint8 quantity 1
+---
+# Terminal outcome is the Action status, not request admission.
+string message
+uint8 requested_quantity
+uint8 planned_quantity
+uint8 fetched_quantity
+---
+string stage
+uint8 planned_quantity
+uint8 fetched_quantity

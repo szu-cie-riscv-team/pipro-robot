@@ -1,0 +1,10 @@
+string request_id
+string client_id
+string token
+string operation
+string arguments
+---
+bool accepted
+string operation_id
+string error
+string result

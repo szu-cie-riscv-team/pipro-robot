@@ -1,0 +1,8 @@
+# Goal
+string task_name
+---
+# Result
+string message
+---
+# Feedback
+string step
